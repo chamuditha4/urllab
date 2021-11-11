@@ -7,6 +7,7 @@
     <title>URLlab | Experiment on URLs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -30,23 +31,22 @@
     <div class="card">
         <h5 class="card-header">Lab</h5>
         <div class="card-body">
-            <form>
+            <form  id="myForm"  action="javascript:void(0);">
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Enter Domains</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" id="urls" rows="3"></textarea>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-dark">Do the Magic!.</button>
+                <button type="button" class="btn btn-dark" onclick="myFunction()">Do the Magic!.</button>
             </form>  
         </div>
     </div> 
-
     <div class="card">
         <h5 class="card-header">Result</h5>
         <div class="card-body">
             <div class="form-group">
                 <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" readonly></textarea>
+                <textarea class="form-control" id="res" rows="3" readonly></textarea>
             </div>
         </div>
     </div> 
